@@ -9,9 +9,9 @@ import android.widget.TextView
 import androidx.fragment.app.Fragment
 
 class Fragment2 : Fragment() {
-    private lateinit var infoTextView: TextView
-    private lateinit var fruktImageView: ImageView
-    private lateinit var fruktDescriptions: Array<String>
+    private lateinit var Text: TextView
+    private lateinit var Image: ImageView
+    private lateinit var Descriptions: Array<String>
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -26,17 +26,17 @@ class Fragment2 : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        infoTextView = view.findViewById(R.id.textView)
-        fruktImageView = view.findViewById(R.id.imageView)
-        fruktDescriptions = resources.getStringArray(R.array.frukts)
+        Text = view.findViewById(R.id.textView)
+        Image = view.findViewById(R.id.imageView)
+        Descriptions = resources.getStringArray(R.array.array)
     }
     fun setDescription(buttonIndex: Int) {
-        val description: String = fruktDescriptions[buttonIndex]
-        infoTextView.text = description
+        val description: String = Descriptions[buttonIndex]
+        Text.text = description
         when (buttonIndex) {
-            1 -> fruktImageView.setImageResource(R.drawable.apple)
-            2 -> fruktImageView.setImageResource(R.drawable.persik)
-            3 -> fruktImageView.setImageResource(R.drawable.grusha)
+            1 -> Image.setImageResource(R.drawable.ozy)
+            2 -> Image.setImageResource(R.drawable.intel)
+            3 -> Image.setImageResource(R.drawable.hdd)
         }
     }
 

@@ -10,18 +10,18 @@
         android:id="@+id/button1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Яблоки" />
+        android:text="Оперативная память" />
 
     <Button
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Персики" />
+        android:text="Процессор" />
 
     <Button
         android:id="@+id/button3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Груши" />
+        android:text="HDD и SSD" />
 
 </LinearLayout>
